@@ -1,0 +1,123 @@
+body{
+    background-color:#337AB7;
+}
+
+#blockQuoteId > p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size:24px;
+    font-weight:Bolder;
+}
+
+#blockQuoteId > footer {
+    font-family: 'Ubuntu', sans-serif;
+    font-size:18px;
+    font-weight:normal;
+}
+
+#quoteSectionId{
+    margin-top: 10%;
+    margin-left:25%;
+    margin-right:25%;
+    margin-bottom:10%;
+    height:auto !important;
+    width:auto !important;
+    background-color:white;
+}
+
+#quoteSectionId ul li{
+    /*padding-left:5%;
+    padding-bottom:5%;*/
+}
+
+blockquote {
+    background: #FFF;
+    border-left: none;
+    padding: 0.5em 10px;
+    display:block;
+    quotes: "\201C""\201D""\2018""\2019";
+    position: relative;
+}
+blockquote:before {
+    color: #ccc;/*attr(color-content);*/
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.05em;
+    vertical-align: -0.4em;
+}
+
+blockquote:after{
+    color: #ccc;/*attr(color-content);*/
+    content:close-quote;
+    font-size:4em;
+    line-height:0.1em;
+    margin-left:0.05em;
+    vertical-align:-0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+blockquote footer{
+    position: absolute;
+    right:15px;
+    bottom: -20px;
+    padding-top:50px;
+    padding-bottom:-20px;
+}
+.bottom-links{
+    padding-left:5%;
+    padding-right:3%;
+    padding-bottom:3%;
+}
+a{
+    text-decoration: none;
+    cursor:pointer;
+}
+#twitterId {
+    text-decoration: none;
+    cursor:pointer;
+    border-radius:0px;
+    border:none;
+}
+
+#googlePlusId{
+    text-decoration:none;
+    cursor:pointer;
+    border-radius:0px;
+    border:none;
+}
+
+#linkedInId{
+    text-decoration:none;
+    cursor:pointer;
+    border-radius:0px;
+    border:none;
+}
+
+#newquoteId{
+    text-decoration: none;
+    cursor:pointer;
+    border-radius:0px;
+    border:none;
+}
+
+@media (min-width:320px) and (max-width:480px){
+    .bottom-links{
+        padding-left:20%;
+        padding-right:15%;
+        padding-bottom:28%;
+    }
+
+    #twitterId{
+        margin-bottom: 10%;
+    }
+
+    #googlePlusId{
+        margin-bottom: 10%
+    }
+
+    #newquoteId{
+        margin-top:3%;
+    }
+}
